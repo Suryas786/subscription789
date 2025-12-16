@@ -1,0 +1,196 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background-color: #1f2937;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+/* MAIN CONTENT */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* TITLES */
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #111827;
+}
+
+/* PLAN CARD */
+form div {
+    border: 1px solid #e5e7eb;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+form div:hover {
+    border-color: #2563eb;
+    background-color: #f9fafb;
+}
+
+/* RADIO BUTTON */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* PRICE */
+strong {
+    font-size: 18px;
+    color: #2563eb;
+}
+
+/* BUTTON */
+button {
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* LINKS */
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* SUCCESS & ERROR PAGES */
+.success {
+    text-align: center;
+    color: #16a34a;
+}
+
+.error {
+    text-align: center;
+    color: #dc2626;
+}
+
+/* FOOTER (OPTIONAL IF YOU ADD LATER) */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #6b7280;
+}
+.subscription-wrapper {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.subscription-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.plans-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.plan-card {
+    background: #fff;
+    padding: 25px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    position: relative;
+    text-align: center;
+}
+
+.plan-card.featured {
+    border: 2px solid #000;
+}
+
+.badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.price {
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+.price span {
+    font-size: 14px;
+    color: #777;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.features li {
+    margin-bottom: 10px;
+}
+
+.primary-btn {
+    width: 100%;
+    padding: 12px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.primary-btn:hover {
+    background: #333;
+}
+
+.subscription-footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #666;
+}

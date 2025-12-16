@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="subscription-wrapper">
+
+
+    <header class="subscription-header">
+        <h1>Choose Your Subscription</h1>
+        <p>Select the plan that best fits your needs</p>
+    </header>
+
+
+    <div class="plans-container">
+
+
+         <div class="plan-card">
+            <h2>Weekly Plan</h2>
+            <p class="price">$5 <span>/ Week</span></p>
+
+            <ul class="features">
+                <li>✔ Full platform access</li>
+                <li>✔ Cancel anytime</li>
+                <li>✔ Email support</li>
+            </ul>
+
+            <form method="POST" action="{% url 'process_payment' %}">
+                {% csrf_token %}
+                <input type="hidden" name="plan" value="monthly">
+                <button type="submit" class="primary-btn">
+                    Subscribe Weekly
+                </button>
+            </form>
+        </div>
+
+        
+        <div class="plan-card">
+            <h2>Monthly Plan</h2>
+            <p class="price">$10 <span>/ month</span></p>
+
+            <ul class="features">
+                <li>✔ Full platform access</li>
+                <li>✔ Cancel anytime</li>
+                <li>✔ Email support</li>
+            </ul>
+
+            <form method="POST" action="{% url 'process_payment' %}">
+                {% csrf_token %}
+                <input type="hidden" name="plan" value="monthly">
+                <button type="submit" class="primary-btn">
+                    Subscribe Monthly
+                </button>
+            </form>
+        </div>
+
+        <div class="plan-card featured">
+            <div class="badge">Best Value</div>
+
+            <h2>Yearly Plan</h2>
+            <p class="price">$100 <span>/ year</span></p>
+
+            <ul class="features">
+                <li>✔ Everything in Monthly</li>
+                <li>✔ Save 20%</li>
+                <li>✔ Priority support</li>
+            </ul>
+
+            <form method="POST" action="{% url 'process_payment' %}">
+                {% csrf_token %}
+                <input type="hidden" name="plan" value="yearly">
+                <button type="submit" class="primary-btn">
+                    Subscribe Yearly
+                </button>
+            </form>
+        </div>
+
+    </div>
+
+ 
+    <footer class="subscription-footer">
+        <p>🔒 Secure payments powered by Square</p>
+    </footer>
+
+</section>
+
+{% endblock %}

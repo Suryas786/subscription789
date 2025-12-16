@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>My Subscription</h2>
+
+{% if subscription %}
+<p>Plan: {{ subscription.plan }}</p>
+<p>Expires on: {{ subscription.end_date }}</p>
+<p>Days left: {{ subscription.days_left }}</p>
+{% else %}
+<p>No active subscription</p>
+{% endif %}
+{% endblock %}
